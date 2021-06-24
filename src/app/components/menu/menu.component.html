@@ -1,0 +1,20 @@
+<!--========== MENU ==========-->
+<section class="menu section bd-container" id="menu" style="padding-top: 0;">
+  <div class="home__data">
+    <h1 class="home__title">Lalina's menu</h1>
+</div>
+
+  <p class="about__description">Our food uses the best ingredients with no MSG or preservatives.</p>
+
+  <div class="menu__container bd-grid">
+
+
+      <div *ngFor="let item of menuItems" class="menu__content">
+          <img src="{{item.photoUrl}}" alt="Pepperoni Pizza" class="menu__img">
+          <h3 class="menu__name">{{item.name}}</h3>
+          <span class="menu__detail">{{item.description}}</span>
+          <span class="menu__preci">{{item.price}}</span>
+          <a href="http://m.me/lalinakidscafe" class="menu__button"><span>Book now</span></a>
+      </div>
+  </div>
+</section>
