@@ -12,4 +12,8 @@ export class HeaderBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isInRoute(navName: string) {
+    return window.location.pathname.includes(navName);
+  }
+
 }

@@ -4,6 +4,7 @@
 /*===== GENERAL CSS =====*/
 a {
   color: #6cc0a4;
+  cursor: pointer;
 }
 
 
@@ -468,6 +469,12 @@ img{
   margin-top: 3.5rem;
 }
 
+.home__container,
+.about__container,
+.app__container{
+  padding-bottom: 2rem;
+}
+
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
   .home__container,
@@ -475,6 +482,7 @@ img{
   .app__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
+    padding-bottom: 4rem;
   }
 
   .about__data, .about__initial,

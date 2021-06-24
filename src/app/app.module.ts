@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
 import { FooterBarComponent } from './components/footer-bar/footer-bar.component';
 import { HomeMainComponent } from './components/home-main/home-main.component';
-import { StoryComponent } from './components/story/story.component';
+import { AboutComponent } from './components/about/about.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { ServiceComponent } from './components/service/service.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { MenuComponent } from './components/menu/menu.component';
     HeaderBarComponent,
     FooterBarComponent,
     HomeMainComponent,
-    StoryComponent,
-    MenuComponent
+    AboutComponent,
+    MenuComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
