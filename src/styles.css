@@ -7,6 +7,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  color: #6cc0a4;
+}
+
 
 /*===== VARIABLES CSS =====*/
 :root {

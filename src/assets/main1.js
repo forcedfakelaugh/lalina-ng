@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   })
 
   /*==================== SCROLL REVEAL ANIMATION ====================*/
-  const sr = ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 1700,
-    reset: true
-  });
+  // const sr = ScrollReveal({
+  //   origin: 'top',
+  //   distance: '30px',
+  //   duration: 1700,
+  //   reset: true
+  // });
 
   // var elements = document.getElementsByClassName("nav__link");
 

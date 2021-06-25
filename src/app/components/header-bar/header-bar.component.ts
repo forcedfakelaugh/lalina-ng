@@ -13,6 +13,10 @@ export class HeaderBarComponent implements OnInit {
   }
 
   isInRoute(navName: string) {
+    if (window.location.pathname.endsWith('/') && navName === 'home'){
+      return true;
+    }
+
     return window.location.pathname.includes(navName);
   }
 
