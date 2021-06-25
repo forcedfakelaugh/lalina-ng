@@ -9,6 +9,7 @@ import { HomeMainComponent } from './components/home-main/home-main.component';
 import { AboutComponent } from './components/about/about.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ServiceComponent } from './components/service/service.component';
+import { ImgGridComponent } from './components/img-grid/img-grid.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ServiceComponent } from './components/service/service.component';
     HomeMainComponent,
     AboutComponent,
     MenuComponent,
-    ServiceComponent
+    ServiceComponent,
+    ImgGridComponent
   ],
   imports: [
     BrowserModule,

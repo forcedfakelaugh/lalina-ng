@@ -163,6 +163,10 @@ img{
   background-color: var(--body-color);
 }
 
+.modal-content {
+  background-color: var(--container-color)
+}
+
 /*========== NAV ==========*/
 .nav{
   max-width: 1024px;
