@@ -11,29 +11,26 @@
           <h3 class="menu__name">{{item.name}}</h3>
           <span class="menu__detail">{{item.description}}</span>
           <span class="menu__preci">{{item.price}}</span>
-          <a class="menu__button" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>details...</span></a>
+          <a class="menu__button" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="passDataToModal(item.id)"><span>details...</span></a>
       </div>
   </div>
 </section>
 
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Amazing Panda</h5>
+    <div class="modal-content border-0" style="border-radius: 0.75rem;">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title" id="exampleModalLabel">{{selected.name}}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="menu__content">
-          <img src="assets/img/img-pizza.jpg" alt="Pepperoni Pizza" class="menu__img">
-          <h3 class="menu__name">Pepperoni Pizza</h3>
-          <span class="menu__detail">Delicious pizza</span>
-          <span class="menu__preci">180,000 vnd</span>
-          <a href="http://m.me/lalinakidscafe" class="menu__button"><span>Book now</span></a>
+        <div class="menu__content" style="box-shadow: none;">
+          <img src="{{selected.photoUrl}}" alt="Pepperoni Pizza" class="menu__img w-75 rounded">
+          <span class="menu__preci text-center pb-1">{{selected.price}}</span>
+          <span class="menu__detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+          <a class="menu__button" data-bs-dismiss="modal"><span>Close</span></a>
       </div>
       </div>
-
     </div>
   </div>
 </div>
