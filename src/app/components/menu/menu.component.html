@@ -11,7 +11,7 @@
           <h3 class="menu__name">{{item.name}}</h3>
           <span class="menu__detail">{{item.description}}</span>
           <span class="menu__preci">{{item.price}}</span>
-          <a class="menu__button" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="passDataToModal(item.id)"><span>details...</span></a>
+          <a class="menu__button" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="passDataToModal(item.id)"><span>Details</span></a>
       </div>
   </div>
 </section>
@@ -21,11 +21,10 @@
     <div class="modal-content border-0" style="border-radius: 0.75rem;">
       <div class="modal-header border-0 pb-0">
         <h5 class="modal-title" id="exampleModalLabel">{{selected.name}}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="menu__content" style="box-shadow: none;">
-          <img src="{{selected.photoUrl}}" alt="Pepperoni Pizza" class="menu__img w-75 rounded">
+          <img src="{{selected.photoUrl}}" alt="Pepperoni Pizza" class="menu__img w-100 rounded">
           <span class="menu__preci text-center pb-1">{{selected.price}}</span>
           <span class="menu__detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
           <a class="menu__button" data-bs-dismiss="modal"><span>Close</span></a>
