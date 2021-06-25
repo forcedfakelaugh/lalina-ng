@@ -96,33 +96,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
   })
 
   /*==================== SCROLL REVEAL ANIMATION ====================*/
-  // const sr = ScrollReveal({
-  //   origin: 'top',
-  //   distance: '30px',
-  //   duration: 1700,
-  //   reset: true
-  // });
+  const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 1700,
+    reset: true
+  });
 
-  // var elements = document.getElementsByClassName("nav__link");
+  var elements = document.getElementsByClassName("nav__link");
 
-  // var attachReveal = function () {
-  //   sr.reveal(`.home__data, .home__img,
-  //   .about__data, .about__img,
-  //   .services__content, .menu__content,
-  //   .app__data, .app__img,
-  //   .contact__data, .contact__button,
-  //   .footer__content`, {
-  //     interval: 200,
-  //     afterReveal: function (el) {
-  //       ScrollReveal().clean(el);
-  //     }
-  //   })
-  // };
+  var attachReveal = function () {
+    sr.reveal(`.home__data, .home__img,
+    .about__data, .about__img,
+    .services__content, .menu__content,
+    .app__data, .app__img, .img-grid,
+    .contact__data, .contact__button,
+    .footer__content`, {
+      interval: 200,
+      afterReveal: function (el) {
+        ScrollReveal().clean(el);
+      }
+    })
+  };
 
-  // for (var i = 0; i < elements.length; i++) {
-  //   elements[i].addEventListener('click', attachReveal, false);
-  // }
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', attachReveal, false);
+  }
 
-  // attachReveal();
+  attachReveal();
 
 });
