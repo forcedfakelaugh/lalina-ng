@@ -5,10 +5,9 @@
       <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
               <li class="nav__item"><a routerLink="" routerLinkActive="active" class="nav__link" [ngClass]="{'active-link': isInRoute('home')}">Home</a></li>
-              <li class="nav__item"><a routerLink="about" routerLinkActive="active" class="nav__link" [ngClass]="{'active-link': isInRoute('about')}">About</a></li>
               <li class="nav__item"><a routerLink="service" routerLinkActive="active" class="nav__link" [ngClass]="{'active-link': isInRoute('service')}">Services</a></li>
               <li class="nav__item"><a routerLink="menu" routerLinkActive="active" class="nav__link" [ngClass]="{'active-link': isInRoute('menu')}">Menu</a></li>
-              <li class="nav__item"><a class="nav__link" onclick="window.scrollTo(0,document.body.scrollHeight);" >Contact </a></li>
+              <li class="nav__item"><a routerLink="about" routerLinkActive="active" class="nav__link" [ngClass]="{'active-link': isInRoute('about')}">About</a></li>
               <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
           </ul>
       </div>

@@ -479,6 +479,7 @@ img{
 
 .home__container,
 .about__container,
+.service__container,
 .app__container{
   padding-bottom: 2rem;
 }
@@ -487,6 +488,7 @@ img{
 @media screen and (min-width: 576px){
   .home__container,
   .about__container,
+  .service__container,
   .app__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -588,6 +590,7 @@ img{
   }
 
   .about__container,
+  .service__container,
   .app__container{
     column-gap: 7rem;
   }
