@@ -370,6 +370,7 @@ img{
   width: 100px;
   align-self: center;
   margin-bottom: var(--mb-2);
+  border-radius: 0.4rem;
 }
 
 .menu__name, .menu__preci{
