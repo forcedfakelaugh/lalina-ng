@@ -3,10 +3,12 @@
     <h1 class="home__title">Lalina's menu</h1>
 </div>
 
-  <p class="about__description">Our food uses the best ingredients with no MSG or preservatives.</p>
+  <span class="about__description">Our food uses the best ingredients with no MSG or preservatives. Check our <a href="assets/menu.pdf" target="_blank"><u>paper menu</u></a>.</span>
+  <br>
+  <span class="about__description text-center" style="font-size: 90%;"><i>* VAT included</i></span>
 
   <div class="menu__container bd-grid">
-      <div *ngFor="let item of menuItems" class="menu__content">
+      <div *ngFor="let item of observableMenuItems | async" class="menu__content">
           <img src="{{item.photoUrl}}" alt="Pepperoni Pizza" class="menu__img">
           <h3 class="menu__name">{{item.name}}</h3>
           <span class="menu__detail">{{item.description}}</span>
@@ -16,7 +18,7 @@
   </div>
 </section>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" *ngIf="(observableMenuItems | async)">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content border-0" style="border-radius: 0.75rem;">
       <div class="modal-header border-0 pb-0">

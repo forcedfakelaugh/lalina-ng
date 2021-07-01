@@ -101,5 +101,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', attachReveal, false);
   }
-    attachReveal();
+
+  attachReveal();
 });
