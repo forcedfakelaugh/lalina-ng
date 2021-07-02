@@ -9,14 +9,13 @@ import { MenuItem } from 'src/app/models/menu-item.model';
   styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit {
-  observableMenuItems: Observable<any> = this.menuService.getJSON();
   menuItems: MenuItem[] = [];
   selected!: MenuItem;
 
   constructor(private menuService: MenuService) {}
 
   ngOnInit(): void {
-    this.observableMenuItems.subscribe((data) => {
+    this.menuService.getJSON().subscribe((data) => {
       this.menuItems = data;
       this.selected = this.menuItems[0]; // init
     });
