@@ -1,3 +1,4 @@
+import { ManagerComponent } from './components/manager/manager.component';
 import { ServiceComponent } from './components/service/service.component';
 import { HomeMainComponent } from './components/home-main/home-main.component';
 import { AboutComponent } from './components/about/about.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'about', component: AboutComponent },
   { path: 'service', component: ServiceComponent },
+  { path: 'manager', component: ManagerComponent },
 ];
 
 @NgModule({

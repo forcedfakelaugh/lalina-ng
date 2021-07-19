@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "lpsmile"
+  },
+  "targets": {
+    "lpsmile": {
+      "hosting": {
+        "lalina-ng": [
+          "lpsmile"
+        ]
+      }
+    }
   }
 }
