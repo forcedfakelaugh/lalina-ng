@@ -4,6 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BirthdayComponent } from './components/birthday/birthday.component';
 
 const routes: Routes = [
   { path: '', component: HomeMainComponent },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'about', component: AboutComponent },
   { path: 'service', component: ServiceComponent },
+  { path: 'birthday', component: BirthdayComponent },
 ];
 
 @NgModule({

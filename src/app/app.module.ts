@@ -13,6 +13,7 @@ import { ImgGridComponent } from './components/img-grid/img-grid.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BirthdayComponent } from './components/birthday/birthday.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -27,7 +28,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutComponent,
     MenuComponent,
     ServiceComponent,
-    ImgGridComponent
+    ImgGridComponent,
+    BirthdayComponent
   ],
   imports: [
     BrowserModule,
