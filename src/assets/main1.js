@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   var attachReveal = function () {
     if (!window.location.pathname.includes('menu')) {
-      sr.reveal(`img`, {
+      sr.reveal('.reveal', {
         interval: 50
         // ,
         // afterReveal: function (el) {
